@@ -1,0 +1,102 @@
+:root {
+    --mainRed: #022111;
+    --offWhite: #eeecba;
+    --greenWhite: #c6f1c1;
+    --buttonHover: #b02c2c;
+    --inputColor: #337d51;
+    --sendinColor: #285e3e;
+    --sendinGlow: #48ab6f;
+    --blur-amount: 10px;
+    --mainFont: #ffef79;
+    --FontGlow: #fff4a4;
+    --mainGreen: #1a2b02;
+    --darkerGreen: #1b3121;
+    --loginGreen: #27452f;
+    --adminGreen: #18302d;
+    --adminFont: #34d984;
+    --adminGlow: #78efb1;
+    --adminDark: #081514;
+    
+
+}
+
+body {
+    background-color: var(--adminGreen);
+}
+
+navbar a {
+   color: var(--mainFont);
+    list-style: none;
+    text-decoration: none;
+    font-family: "Castoro Titling", serif;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar{
+   
+    height: 30px;
+    object-fit: cover;
+}
+
+a:hover {
+    color: var(--FontGlow);
+     text-shadow: 5px 5px 30px var(--FontGlow);
+}
+
+h1 {
+    color: var(--mainFont);
+     font-family: "Castoro Titling", serif;
+   justify-content: center;
+    display: flex;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 100;
+    text-shadow: 5px 5px 40px var(--FontGlow);
+}
+
+.lead {
+    color: var(--mainFont);
+     font-family: "Castoro Titling", serif;
+    font-size: 40px;
+    font-weight: 100;
+     justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.stats {
+   
+    height: 500px;
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+}
+
+.stat-num {
+   display: flex;
+   flex-direction: column;
+   gap: 35rem;
+   padding: 1.25rem;
+   color: var(--mainFont);
+}
+
+.stat-label span{ font-size: .85rem; text-transform: uppercase; letter-spacing: .08em;
+color: var(--mainFont); }
+
+.pie-chart{
+   
+      width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Turns the square into a circle */
+    background: conic-gradient(
+    #993429 0% 40%,   
+    #982c2c 40% 70%,   
+    #bcb650 70% 90%,   
+    #caab2c 90% 100%  
+  );
+}

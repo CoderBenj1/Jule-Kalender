@@ -1,0 +1,267 @@
+@import url(/public/nav.css);
+:root {
+    --mainRed: #022111;
+    --offWhite: #eeecba;
+    --greenWhite: #c6f1c1;
+    --buttonHover: #b02c2c;
+    --inputColor: #1b452c;
+    --sendinColor: #285e3e;
+    --sendinGlow: #48ab6f;
+    --blur-amount: 10px;
+    --mainFont: #ffef79;
+    --FontGlow: #fff4a4;
+    --mainGreen: #1a2b02;
+    --darkerGreen: #1b3121;
+    --loginGreen: #27452f;
+}
+
+body{
+    background-color: var(--loginGreen);
+
+}
+
+.bodyLog {
+    background-color: var(--loginGreen);
+}
+
+
+.castoro-titling-regular {
+  font-family: "Castoro Titling", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+ h1 {
+    color: var(--mainFont);
+    font-family: "Castoro Titling", serif;
+   justify-content: center;
+    display: flex;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 100;
+    text-shadow: 5px 5px 40px var(--FontGlow);
+    background: none;
+    
+
+
+}
+h2 {
+    color: var(--mainFont);
+    font-family: serif;
+   justify-content: center;
+    display: flex;
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 100;
+    text-shadow: 5px 5px 30px var(--FontGlow);
+    background: none;
+}
+
+h3 {
+       color: var(--mainFont);
+    font-family: "Castoro Titling", serif;
+   justify-content: center;
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    text-shadow: 5px 5px 30px var(--FontGlow);
+    background: none;
+
+}
+
+p {
+     color: var(--mainFont);
+    font-family: "Castoro Titling", serif;
+   justify-content: center;
+    display: flex;
+    text-align: center;
+    
+    font-weight: 100;
+    text-shadow: 5px 5px 30px var(--FontGlow);
+    background: none;
+
+}
+
+.wallPaper img  {
+    width: 100%;
+    
+    height: 500px;
+
+    object-fit: cover;
+    border-radius: 29px;
+   
+    
+}
+.wallPaper{
+    width: 100%;
+    height: 500px;
+}
+.jule-Kal {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: var(--darkerGreen);
+    gap: 0.75rem;
+  padding: 1.5rem;  
+    border-radius: 20px;
+
+}
+
+.julBox {
+    background-color: var(--mainRed);
+    width: 100%;
+    height: 90px;
+    border-radius: 3px;
+    border: var(--mainFont);
+    border: 1px;
+       display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     grid-template-columns: repeat(6, 1fr);
+   
+
+   
+}
+
+.julBox p {
+    color: var(--mainFont);
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+button:hover {
+    background-color: var(--buttonHover);
+     box-shadow: 5px 5px 40px var(--buttonHover);;
+}
+
+.navbar a {
+    color: var(--mainFont);
+    list-style: none;
+    text-decoration: none;
+    font-family: "Castoro Titling", serif;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar{
+   
+    height: 30px;
+    object-fit: cover;
+}
+
+a:hover {
+    color: var(--FontGlow);
+     text-shadow: 5px 5px 30px var(--FontGlow);
+}
+
+#logHeader h2 {
+    display: flex;
+    text-align: center ;
+    font-style: normal;
+}
+
+.login-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--mainFont);
+    background-color: transparent;
+   height: 60%;
+  
+  
+   
+    
+}
+
+input {
+    background-color: var(--loginGreen);
+    color: var(--offWhite);
+    border-color: var(--offWhite);
+    border-radius: 10px;
+    border-width: 1.5px;
+      padding: 16px 20px; /* Increases height and inner spacing */
+    width: 23rem;
+    height: 40px;
+}
+input::placeholder {
+    color: var(--offWhite);
+     font-family: "Castoro Titling", serif;
+     font-weight: 100;
+}
+
+label {
+    color: var(--mainFont);
+}
+
+.input.box {
+    background-color: var(--darkerGreen);
+    color: var(--buttonHover);
+}
+
+.input.box label {
+    color: var(--mainFont);
+}
+
+#sendIn {
+    background-color: var(--sendinColor);
+    color: var(--offWhite);
+    width: 10%;
+    height: 30px;
+    transition: transform 0.2s ease-in-out;
+    border: none;
+    border-radius: 10px;
+    
+    
+     gap: 15px;
+}
+
+
+#sendIn:hover {
+    background-color: var(--sendinGlow);
+    box-shadow: 5px 5px 40px var(--sendinGlow);;
+    transform: scale(1.08);
+}
+
+
+#answer {
+    background-color: var(--inputColor);
+    color: var(--greenWhite);
+      backdrop-filter: blur(var(--blur-amount));
+      border-color: var(--greenWhite);
+      border-radius: 1px;
+       width: min(90vw, 600px);
+  height: 8rem;
+  resize: vertical;
+}
+.popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.questionBox {
+    width: 20%;
+    width: min(90vw, 640px);
+     aspect-ratio: 16 / 9;
+    background-color: var(--darkerGreen);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+
+}
+
+#sprørsmål-txt p {
+    color: var(--mainFont);
+    font-size: 23rem;
+
+}

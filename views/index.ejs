@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jule kalenderen</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <script src="/app.js"></script>
+    <script src="/quiz.js"></script>
+    
+
+  <%- include("./partials/nav.ejs") %>
+    <script src="https://app.embed.im/snow.js" defer></script>
+
+</head>
+
+<h1>Bleikers Digitale Jule kalender</h1>
+<h3>Ett spørsmål vær dag</h3>
+<h2>God Jul!</h2>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+
+
+<body>
+    <div class="jule-Kal">
+        <% for (let day = 1; day <= 24; day++) {%>
+        <button class="julBox" aria-label="Luke <% day %>" onclick="window.location.href='/pop/<%= day %>'">
+            <p><%=day%></p>
+        </button>
+       <% }%>
+             
+            
+            
+    </div>
+    
+</body>
+</html>
